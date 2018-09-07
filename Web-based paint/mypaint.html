@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="css/paint.css" rel="stylesheet" type="text/css">
+    <title>به برنمامه نقاشی خوش آمدید :)</title>
+</head>
+<body>
+<div id="main">
+    <div id="frame">
+    <div id="sketch">
+
+        <canvas id="paint">
+
+        </canvas>
+    </div>
+    </div>
+
+<!--<p id="tes">hi</p>-->
+
+
+   <div class="tools">
+    <button id="pen" type="button" onclick="penf()"></button>
+       <button id="spray" type="button" onclick="sprayf()"></button>
+       <button id="alpha" type="button" onclick="textf()"></button>
+       <button class="rect" type="button" onclick="recf()"></button>
+       <button id="cir" type="button" onclick="circlef()"></button>
+       <button id="eraser" type="button" onclick="erasef()"></button>
+       <button id="liner" type="button" onclick="linerf()"></button>
+
+       <button id="ellips" type="button" onclick="ellipsf()"></button>
+       <button class="rect" type="button" onclick="squaref()">square</button>
+       <button id="clear" type="button" onclick="clearf()">صفحه جدید</button>
+
+    </div>
+
+
+
+    <div class="font">
+        سایز قلم<br>
+<select name="fonts" id="selector"  >
+    <option id="s1" value='1' >1</option>
+    <option value='5'>5</option>
+    <option value='10' >10</option>
+    <option value='15' >15</option>
+    <option value='20'>20</option>
+    <option value='25'>25</option>
+    <option value='35'>35</option>
+    <option value='50'>50</option>
+    <option value='60'>60</option>
+    <option value='70'>70</option>
+</select>
+      </div>
+    <div id="colorPicker" >
+        انتخاب رنگ<br>
+
+
+        <a id="black" onclick="blackf()" href="#">
+            <img src="img/black_icon.png" alt="black" height="32" width="32">
+        </a>
+         <a id="purple" onclick="purplef()" href="#">
+            <img src="img/amethyst_icon.png" alt="purple" height="32" width="32">
+        </a>
+        <a id="blue" onclick="bluef()" href="#">
+            <img src="img/blue_icon.png" alt="blue" height="32" width="32">
+        </a>
+        <a id="green" onclick="greenf()" href="#">
+            <img src="img/green_icon.png" alt="green" width="32" height="32">
+        </a>
+        <a id="red" onclick="redf()" href="#">
+            <img src="img/red_icon.png" alt="red" width="32" height="32">
+        </a>
+        <a id="yellow" onclick="yellowf()" href="#">
+            <img src="img/yellow_icon.png" alt="yellow" width="32" height="32">
+        </a>
+        <a id="cloud" href="#" onclick="cloudf()" >
+            <img src="img/clouds_icon.png" alt="white" height="32" width="32">
+        </a>
+        <br>
+        <input type="color" id="inColor" > رنگ‌های بیشتر
+    </div>
+
+
+
+
+      <div id="loadPic1">
+          <input id="u_in" class="url_input" type="url" height="50" width="150" placeholder="آدرس را وارد کنید">
+          <input id="u-bt" class="url_input" type="button" onclick="load_but()" value="افزودن عکس از وب">
+
+        </div>
+    <div id="loadPic2">
+آپلود عکس
+       <br> <button id="up_but" type="button" title="آپلود"   onclick="uploadf()"></button>
+
+          <input id="upload" type="file" value="آپلود" title="انتخاب عکس"    >
+
+      </div>
+    
+
+      <div id="save">
+          ذخیره
+          <a id="dl-but"  download>
+        <button type="button" onclick="savef()" >ذخیره شود        </button></a>
+          <p id="savep"></p>
+      </div>
+
+</div>
+<img id="canvasImg" >
+
+
+<script src="scripts/script.js"></script>
+<script src="scripts/line.js"></script>
+<script src="scripts/pen.js">    </script>
+<script src="scripts/eraser.js">    </script>
+<script src="scripts/spray.js">    </script>
+<script src="scripts/circle.js">    </script>
+<script src="scripts/rectangle.js"></script>
+<script src="scripts/text.js"></script>
+<script src="scripts/colorpicker.js"></script>
+<script src="scripts/imageloading.js"></script>
+<script src="scripts/save.js"></script>
+<script src="scripts/ellips.js"></script>
+<script src="scripts/square.js"></script>
+
+
+</body>
+</html>
